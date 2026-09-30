@@ -1,0 +1,336 @@
+/* =========================
+   GENERAL
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7f8;
+    color: #222;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+.navbar {
+    background: #111827;
+    padding: 18px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h2 {
+    color: #9acd32;
+    margin: 0 0 15px 0;
+    font-size: 28px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px;
+}
+
+.navbar a:hover {
+    color: #9acd32;
+}
+
+
+/* =========================
+   HERO / HOME
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #e8f5e9, #ffffff);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+    background: #111827;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 13px 22px;
+    margin: 15px 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #374151;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section > p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   AWARENESS CARDS
+========================= */
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    min-height: 150px;
+    margin: 15px;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    font-size: 21px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CHECKER + QUIZ BOX
+========================= */
+
+.checker-box,
+.quiz-box {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    text-align: left;
+}
+
+.checker-box h3,
+.quiz-box h3 {
+    margin-top: 28px;
+    font-size: 19px;
+}
+
+.checker-box label,
+.quiz-box label {
+    display: inline-block;
+    margin: 8px 15px 8px 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+
+/* =========================
+   RESULTS
+========================= */
+
+#result,
+#quizResult,
+#surveyResult {
+    margin-top: 25px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+#result img,
+#quizResult img,
+#surveyResult img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.section:last-child {
+    background: #111827;
+    color: white;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar h2 {
+        font-size: 23px;
+    }
+
+    .navbar a {
+        margin: 4px;
+        font-size: 15px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        width: auto;
+        max-width: 300px;
+        margin: 12px auto;
+        display: block;
+    }
+
+    .checker-box,
+    .quiz-box {
+        padding: 20px;
+    }
+
+    .checker-box label,
+    .quiz-box label {
+        display: block;
+        margin: 12px 0;
+    }
+
+    .button {
+        font-size: 15px;
+    }
+}
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e8f5e9, #ffffff);
+}
+
+.login-box {
+    width: 350px;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+}
+
+.password-box input {
+    flex: 1;
+}
+
+.password-box button {
+    margin-left: 5px;
+    padding: 11px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#loginResult {
+    margin-top: 15px;
+    font-weight: bold;
+}
